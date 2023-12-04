@@ -22,12 +22,19 @@
   font-style: normal;
 }
 
+html {
+  height: 100%;
+}
+
 body {
   margin: 0;
   font-family: "Inter", "Arial", sans-serif;
   font-size: 18px;
   line-height: 26px;
   color: #112933;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
 }
 
 .visually-hidden {
@@ -53,6 +60,7 @@ body {
 
 .main-page {
   margin-bottom: 40px;
+  flex-grow: 1;
 }
 
 .main-page h1 {
