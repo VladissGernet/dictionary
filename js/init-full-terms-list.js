@@ -2,10 +2,10 @@ import {terms} from './mock.js';
 import {glossary} from './elements.js';
 import {createTermsSection} from './create-terms-section.js';
 
-const initMainPageAuthorsList = () => {
-  const receivedAuthors = terms.map((letter) => createTermsSection(letter)).join('');
+const initMainPageTermsList = () => {
+  const receivedTerms = terms.map((letter) => createTermsSection(letter)).join('');
   glossary.innerHTML = '';
-  glossary.insertAdjacentHTML('afterbegin', receivedAuthors);
+  glossary.insertAdjacentHTML('afterbegin', receivedTerms);
 };
 
-export {initMainPageAuthorsList};
+export {initMainPageTermsList};
