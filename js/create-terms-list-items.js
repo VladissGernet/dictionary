@@ -3,7 +3,7 @@ const createTermsListItems = (items) => items.map((termData) => {
   return `
     <li class="glossary-item">
       <a href="#">
-        <h3>${term}</h3>
+        ${term}
       </a>
     </li>
     `;
